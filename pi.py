@@ -4,6 +4,6 @@ text = """
 """
 
 # TODO
-new_sentence = sentence.split() 
+new_sentence = text.split() 
 lengths = list(map(len, new_sentence)) 
 print(lengths)

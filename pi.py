@@ -4,5 +4,6 @@ text = """
 """
 
 new_text = text.split() 
-lengths = list(map(len, new_text)) 
-print(lengths)
+lengths = [len(word.strip(",.")) for word in new_text]
+result = ''.join(map(str, lengths))
+print(result)
